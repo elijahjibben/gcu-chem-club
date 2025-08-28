@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      // Map `@` to the project src directory without relying on Node.js
+      // URL utilities so the config can compile in environments that
+      // lack Node type definitions.
+      '@': '/src',
     },
   },
 })
