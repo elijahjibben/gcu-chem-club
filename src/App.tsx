@@ -203,7 +203,6 @@ export default function GcuChemClubSite() {
               <span className="font-semibold"> CHM-113 (General Chemistry I)</span> and
               <span className="font-semibold"> CHM-115 (General Chemistry II)</span>. Each session recaps key concepts,
               works through representative problems, and answers your questions ahead of quizzes and exams.
-              Everyone is welcome—bring your notes, friends, and curiosity!
             </CardContent>
           </Card>
         </motion.div>
