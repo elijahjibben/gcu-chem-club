@@ -19,8 +19,8 @@ function makeDateTimeBlock(date: string, startClock: string, endClock: string) {
   // startClock / endClock like "18:00:00"
   const day = yyyymmdd(date);
   return {
-    gStart: `${day}T${startClock}`,
-    gEnd: `${day}T${endClock}`,
+    gStart: `${day}T${startClock.replaceAll(":", "")}`,
+    gEnd: `${day}T${endClock.replaceAll(":", "")}`,
     icsStart: `DTSTART;TZID=${TZID}:${day}T${startClock.replaceAll(":", "")}`,
     icsEnd: `DTEND;TZID=${TZID}:${day}T${endClock.replaceAll(":", "")}`,
   };
