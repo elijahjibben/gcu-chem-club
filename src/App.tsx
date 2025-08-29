@@ -228,7 +228,7 @@ export default function GcuChemClubSite() {
             <TabsContent value="113" className="mt-6">
               <Card className="bg-white/5 border-white/20 rounded-3xl">
                 <CardHeader className="px-6 pt-6">
-                  <CardTitle className="text-xl">General Chemistry I — Fall 2025</CardTitle>
+                  <CardTitle className="text-xl">General Chemistry I - Fall 2025</CardTitle>
                 </CardHeader>
                 <CardContent className="px-6 pb-6">
                   <div className="text-xs uppercase tracking-wide mb-2">All sessions: 6:00–7:00 PM (Arizona) • Location: 57-130</div>
@@ -242,7 +242,7 @@ export default function GcuChemClubSite() {
             <TabsContent value="115" className="mt-6">
               <Card className="bg-white/5 border-white/20 rounded-3xl">
                 <CardHeader className="px-6 pt-6">
-                  <CardTitle className="text-xl">General Chemistry II — Fall 2025</CardTitle>
+                  <CardTitle className="text-xl">General Chemistry II - Fall 2025</CardTitle>
                 </CardHeader>
                 <CardContent className="px-6 pb-6">
                   <div className="text-xs uppercase tracking-wide mb-2">All sessions: 6:00–7:00 PM (Arizona) • Location: 57-131</div>
