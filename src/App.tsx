@@ -155,11 +155,11 @@ function EventRow({ event, location }: { event: { date: string; title: string };
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-3 py-3 border-b border-white/20 text-white">
-      <div className="md:col-span-5 font-medium">{long}</div>
+    <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-3 md:gap-4 py-3 border-b border-white/20 text-white">
+      <div className="md:col-span-3 font-medium">{long}</div>
       <div className="md:col-span-3 text-sm">6:00–7:00 PM</div>
-      <div className="md:col-span-2 text-sm">{event.title.split(" • ")[1]}</div>
-      <div className="md:col-span-2 flex gap-2">
+      <div className="md:col-span-3 text-sm">{event.title.split(" • ")[1]}</div>
+      <div className="md:col-span-3 flex flex-wrap gap-2 justify-end">
         <Button
           onClick={onGoogle}
           size="sm"
