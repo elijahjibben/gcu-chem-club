@@ -144,7 +144,7 @@ function ChemistryBg() {
 function EventRow({ event, location }: { event: { date: string; title: string }; location: string }) {
   const dateObj = new Date(event.date + "T00:00:00");
   const long = dateObj.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric", year: "numeric" });
-  const description = `Chemistry Club guided group review session (Location: ${location}). Bring notes & questions!`;
+  const description = `Chemistry Club review session (Location: ${location}).`;
 
   const onICS = () => {
     const blob = icsFile({ title: event.title, description, date: event.date, location });
