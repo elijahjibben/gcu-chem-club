@@ -191,7 +191,6 @@ export default function GcuChemClubSite() {
           <div className="h-10 w-10 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center font-bold">GC</div>
           <span className="text-lg font-semibold tracking-wide">GCU Chemistry Club</span>
         </div>
-        <a href="#schedule" className="text-sm hover:underline">Schedule</a>
       </header>
 
       {/* Intro */}
