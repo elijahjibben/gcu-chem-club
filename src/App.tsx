@@ -155,15 +155,23 @@ function EventRow({ event, location }: { event: { date: string; title: string };
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-3 py-3 border-b border-white/20 text-white">
-      <div className="md:col-span-5 font-medium">{long}</div>
-      <div className="md:col-span-3 text-sm">6:00–7:00 PM</div>
-      <div className="md:col-span-2 text-sm">{event.title.split(" • ")[1]}</div>
-      <div className="md:col-span-2 flex gap-2">
-        <Button onClick={onGoogle} size="sm" className="rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white border border-white/20">
-          <CalendarPlus className="w-4 h-4 mr-2" />Add to Calendar
+    <div className="grid grid-cols-1 md:grid-cols-4 items-center gap-3 py-3 border-b border-white/20 text-white">
+      <div className="font-medium">{long}</div>
+      <div className="text-sm">6:00–7:00 PM</div>
+      <div className="text-sm">{event.title.split(" • ")[1]}</div>
+      <div className="flex gap-2 flex-wrap">
+        <Button
+          onClick={onGoogle}
+          size="sm"
+          className="rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white border border-white/20 text-xs whitespace-nowrap"
+        >
+          <CalendarPlus className="w-5 h-5 mr-2" />Add to Calendar
         </Button>
-        <Button onClick={onICS} size="sm" className="rounded-2xl bg-white/10 hover:bg-white/20 text-white border border-white/20">
+        <Button
+          onClick={onICS}
+          size="sm"
+          className="rounded-2xl bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs whitespace-nowrap"
+        >
           .ics file
         </Button>
       </div>
